@@ -1,0 +1,35 @@
+{
+    "note": "This file contains the sample data for the task.py",
+    "number": [
+        {
+            "int": 14
+        },
+        {
+            "int": 25
+        },
+        {
+            "int": 74
+        },
+        {
+            "int": 27
+        },
+        {
+            "int": 80
+        },
+        {
+            "int": 22
+        },
+        {
+            "int": 33
+        },
+        {
+            "int": 87
+        },
+        {
+            "int": 16
+        },
+        {
+            "int": 61
+        }
+    ]
+}
