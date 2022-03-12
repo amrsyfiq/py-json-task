@@ -1,3 +1,9 @@
+# ==========================================
+# Title:  Python Json Task
+# Author: Amir Syafiq
+# Date:   12 March 2021
+# ==========================================
+
 # Input: a file expected json format. Output: sum, count, average.
 
 import json
@@ -15,8 +21,9 @@ try:
     try:
         for number in data['number']:
             sum = sum + number['int']
-            count = len(data['number'])
-            average = sum / count
+
+        count = len(data['number'])
+        average = sum / count
 
         print("Sum : ", sum)
         print("Count : ", count)

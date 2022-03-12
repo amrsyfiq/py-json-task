@@ -1,4 +1,10 @@
-# generate random number
+# ==========================================
+# Title:  Python Json Task
+# Author: Amir Syafiq
+# Date:   12 March 2021
+# ==========================================
+
+# Generate random number
 
 import json
 from random import randint
