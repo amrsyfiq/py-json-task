@@ -11,6 +11,7 @@ import sys
 
 # Initialize variable
 sum = 0
+loop_count = 0
 
 # Read json file
 try:
@@ -21,16 +22,21 @@ try:
     try:
         for number in data['number']:
             sum = sum + number['int']
+            loop_count += 1
+
+            if(loop_count > len(data['number'])):
+                print("\nLoop Terminated\n")
+                break
 
         count = len(data['number'])
         average = sum / count
 
-        print("Sum : ", sum)
-        print("Count : ", count)
-        print("Average : ", average)
+        print("\nSum : ", sum, "\n")
+        print("Count : ", count, "\n")
+        print("Average : ", average, "\n")
 
     except:
-        print("Oops!", sys.exc_info()[0], "occurred.")
+        print("\nOops!", sys.exc_info()[0], "occurred.\n")
 
 except:
-    print("Oops! Something went wrong when reading the JSON file.")
+    print("\nOops! Something went wrong when reading the JSON file.\n")
