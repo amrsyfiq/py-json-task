@@ -36,7 +36,7 @@ try:
         print("Average : ", average, "\n")
 
     except:
-        print("\nOops!", sys.exc_info()[0], "occurred.\n")
+        print("\nOops!", sys.exc_info()[1], "occurred.\n")
 
 except:
     print("\nOops! Something went wrong when reading the JSON file.\n")
